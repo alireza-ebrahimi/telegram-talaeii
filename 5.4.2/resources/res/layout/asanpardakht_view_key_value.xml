@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_small_value_icon" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="5dp"/>
+    <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/qa_view_value" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/qa_view_key" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

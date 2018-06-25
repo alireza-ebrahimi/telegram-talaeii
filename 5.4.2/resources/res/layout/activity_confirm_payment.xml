@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_back" android:padding="3dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:src="@drawable/ic_ab_back" android:layout_alignParentLeft="true"/>
+            <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="اطلاعات پرداخت" android:layout_toRightOf="@+id/iv_back" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:layout_marginRight="8dp" android:src="@drawable/asan_pardadakht"/>
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="8dp" android:src="@drawable/ic_launcher"/>
+            </LinearLayout>
+            <utils.view.TitleTextView android:textSize="26sp" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="@string/app_payment"/>
+            <utils.view.FarsiTextView android:textSize="@dimen/normal_text_size" android:textColor="@color/light_black" android:layout_gravity="center" android:id="@+id/tv_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="۹ بهمن ۱۳۹۶-۱۲:۳۳"/>
+            <utils.view.FarsiTextView android:textSize="@dimen/normal_text_size" android:textColor="@color/light_black" android:layout_gravity="center" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="۹ بهمن ۱۳۹۶-۱۲:۳۳"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <utils.view.FarsiTextView android:textSize="@dimen/normal_text_medium" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:text="@string/toman"/>
+                <utils.view.TitleTextView android:textSize="26sp" android:textColor="@color/green" android:id="@+id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="۲۰۰،۰۰۰"/>
+            </LinearLayout>
+            <utils.view.FarsiButton android:theme="@style/ButtonGreen" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/btn_submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/submitAndPay"/>
+        </LinearLayout>
+    </ScrollView>
+    <ProgressBar android:id="@+id/pb_loading" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true"/>
+</RelativeLayout>

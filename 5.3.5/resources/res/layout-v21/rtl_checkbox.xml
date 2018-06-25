@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/action_click" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:layout_gravity="center" android:id="@+id/checkbox" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:buttonTint="@r$color/black"/>
+    <utils.view.FarsiTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@r$color/light_gray" android:layout_gravity="right" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2dp" android:layout_marginBottom="3dp" android:text="دانلود عکس ها" android:layout_toLeftOf="@+id/checkbox" android:layout_centerVertical="true"/>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">მთავარზე ნავიგაცია</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">ზემოთ ნავიგაცია</string>
+    <string name="abc_action_menu_overflow_description">მეტი ვარიანტები</string>
+    <string name="abc_action_mode_done">დასრულდა</string>
+    <string name="abc_activity_chooser_view_see_all">ყველას ნახვა</string>
+    <string name="abc_activitychooserview_choose_application">აპის არჩევა</string>
+    <string name="abc_capital_off">გამორთულია</string>
+    <string name="abc_capital_on">ჩართულია</string>
+    <string name="abc_search_hint">ძიება...</string>
+    <string name="abc_searchview_description_clear">მოთხოვნის გასუფთავება</string>
+    <string name="abc_searchview_description_query">ძიების მოთხოვნა</string>
+    <string name="abc_searchview_description_search">ძიება</string>
+    <string name="abc_searchview_description_submit">მოთხოვნის გადაგზავნა</string>
+    <string name="abc_searchview_description_voice">ხმოვანი ძიება</string>
+    <string name="abc_shareactionprovider_share_with">გაზიარება:</string>
+    <string name="abc_shareactionprovider_share_with_application">%s-თან გაზიარება</string>
+    <string name="abc_toolbar_collapse_description">აკეცვა</string>
+    <string name="mdtp_day_picker_description">დღეების ბადე თვეზე</string>
+    <string name="mdtp_deleted_key">%1$s წაიშალა</string>
+    <string name="mdtp_done_label">დასრულდა</string>
+    <string name="mdtp_hour_picker_description">წრიული სლაიდერის დამალვა</string>
+    <string name="mdtp_item_is_selected">არჩეულია %1$s</string>
+    <string name="mdtp_minute_picker_description">წუთების წრიული სლაიდერი</string>
+    <string name="mdtp_select_day">აირჩიეთ თვე და რიცხვი</string>
+    <string name="mdtp_select_hours">აირჩიეთ საათები</string>
+    <string name="mdtp_select_minutes">აირჩიეთ წუთები</string>
+    <string name="mdtp_select_year">აირჩიეთ წელი</string>
+    <string name="mdtp_year_picker_description">წლის სია</string>
+    <string name="search_menu_title">ძიება</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

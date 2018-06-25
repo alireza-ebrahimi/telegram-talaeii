@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/ll_container" android:background="@drawable/border_cluster" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+        <utils.view.TitleTextView android:textSize="11sp" android:textColor="@color/blue_link" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <ImageView android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:src="@drawable/arrow_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp">
+        <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/light_gray" android:id="@+id/posts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="پست های یافت شده" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/rl_sort" android:background="@drawable/border_cluster" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/iv1" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="2dp" android:src="@drawable/menu_down" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/light_gray" android:id="@+id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="مرتب سازی" android:layout_toRightOf="@+id/iv1" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="3dp" android:src="@drawable/sort" android:layout_toRightOf="@+id/tv1" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

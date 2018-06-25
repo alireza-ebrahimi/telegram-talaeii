@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp">
+    <org.telegram.ui.Components.BackupImageView android:id="@+id/userAvatar" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="5dp" android:layout_alignParentLeft="true"/>
+    <utils.view.FarsiTextView android:textSize="10sp" android:id="@+id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    <utils.view.TitleTextView android:textSize="12sp" android:textColor="@color/black" android:gravity="right" android:id="@+id/user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/userAvatar" android:layout_below="@+id/date" android:layout_alignParentRight="true"/>
+    <utils.view.FarsiTextView android:textSize="11sp" android:textColor="@color/blue" android:id="@+id/log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/user" android:layout_alignParentRight="true"/>
+    <View android:id="@+id/divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

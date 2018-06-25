@@ -1,0 +1,103 @@
+package org.telegram.tgnet;
+
+public class TLRPC$TL_channel_layer48 extends TLRPC$TL_channel {
+    public static int constructor = 1260090630;
+
+    public void readParams(AbstractSerializedData stream, boolean exception) {
+        boolean z;
+        boolean z2 = true;
+        this.flags = stream.readInt32(exception);
+        this.creator = (this.flags & 1) != 0;
+        if ((this.flags & 2) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        this.kicked = z;
+        if ((this.flags & 4) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        this.left = z;
+        if ((this.flags & 16) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        this.moderator = z;
+        if ((this.flags & 32) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        this.broadcast = z;
+        if ((this.flags & 128) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        this.verified = z;
+        if ((this.flags & 256) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        this.megagroup = z;
+        if ((this.flags & 512) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        this.restricted = z;
+        if ((this.flags & 1024) != 0) {
+            z = true;
+        } else {
+            z = false;
+        }
+        this.democracy = z;
+        if ((this.flags & 2048) == 0) {
+            z2 = false;
+        }
+        this.signatures = z2;
+        this.id = stream.readInt32(exception);
+        this.access_hash = stream.readInt64(exception);
+        this.title = stream.readString(exception);
+        if ((this.flags & 64) != 0) {
+            this.username = stream.readString(exception);
+        }
+        this.photo = TLRPC$ChatPhoto.TLdeserialize(stream, stream.readInt32(exception), exception);
+        this.date = stream.readInt32(exception);
+        this.version = stream.readInt32(exception);
+        if ((this.flags & 512) != 0) {
+            this.restriction_reason = stream.readString(exception);
+        }
+    }
+
+    public void serializeToStream(AbstractSerializedData stream) {
+        stream.writeInt32(constructor);
+        this.flags = this.creator ? this.flags | 1 : this.flags & -2;
+        this.flags = this.kicked ? this.flags | 2 : this.flags & -3;
+        this.flags = this.left ? this.flags | 4 : this.flags & -5;
+        this.flags = this.moderator ? this.flags | 16 : this.flags & -17;
+        this.flags = this.broadcast ? this.flags | 32 : this.flags & -33;
+        this.flags = this.verified ? this.flags | 128 : this.flags & -129;
+        this.flags = this.megagroup ? this.flags | 256 : this.flags & -257;
+        this.flags = this.restricted ? this.flags | 512 : this.flags & -513;
+        this.flags = this.democracy ? this.flags | 1024 : this.flags & -1025;
+        this.flags = this.signatures ? this.flags | 2048 : this.flags & -2049;
+        stream.writeInt32(this.flags);
+        stream.writeInt32(this.id);
+        stream.writeInt64(this.access_hash);
+        stream.writeString(this.title);
+        if ((this.flags & 64) != 0) {
+            stream.writeString(this.username);
+        }
+        this.photo.serializeToStream(stream);
+        stream.writeInt32(this.date);
+        stream.writeInt32(this.version);
+        if ((this.flags & 512) != 0) {
+            stream.writeString(this.restriction_reason);
+        }
+    }
+}

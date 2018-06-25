@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="mdtp_day_of_week_label_condensed">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="mdtp_done_button_light">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="mdtp_time_label_thin">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+</resources>

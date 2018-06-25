@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rl_container" android:background="@color/poll_sub_background" android:padding="5dp" android:layout_width="match_parent" android:layout_height="50dp">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/image" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentRight="true"/>
+    <RelativeLayout android:id="@+id/rl" android:padding="@dimen/poll_sub_padding" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/image">
+        <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="@dimen/poll_progress_size" android:max="100" android:progress="50" android:progressDrawable="@drawable/poll_progress_drawable" android:layout_centerInParent="true" android:rotationY="180" style="@style/Widget.ProgressBar.Horizontal"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="@dimen/poll_progress_size" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/isSelected" android:padding="@dimen/poll_sub_padding" android:visibility="gone" android:layout_width="@dimen/poll_selected_image" android:layout_height="@dimen/poll_selected_image" android:src="@drawable/tik"/>
+            <utils.view.TitleTextView android:textSize="@dimen/poll_text_size" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/percentage" android:paddingLeft="@dimen/poll_sub_padding" android:paddingRight="@dimen/poll_sub_padding" android:layout_width="wrap_content" android:layout_height="@dimen/poll_progress_size" android:text="50%"/>
+            <utils.view.FarsiTextView android:textSize="@dimen/poll_text_size" android:textColor="@color/white" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="center_vertical" android:id="@+id/title" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="@dimen/poll_progress_size" android:text="Item sfdsffd" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

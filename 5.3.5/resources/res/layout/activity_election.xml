@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/refresher" android:background="@r$color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="right" android:id="@+id/tmp" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentRight="true"/>
+                <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@r$color/black" android:id="@+id/ftv_poll_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tmp" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@r$color/black" android:id="@+id/ftv_poll_sub" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:layout_toLeftOf="@+id/tmp" android:layout_centerVertical="true"/>
+            <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                <org.telegram.customization.util.view.Poll.PollView android:id="@+id/pollView" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </ScrollView>
+        </LinearLayout>
+        <include layout="@layout/layout_offline"/>
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

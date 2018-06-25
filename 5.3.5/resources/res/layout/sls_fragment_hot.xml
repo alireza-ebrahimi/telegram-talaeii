@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/refresher" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/searchHolder" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/sls_search_holder"/>
+        </LinearLayout>
+        <android.support.design.widget.CoordinatorLayout android:orientation="vertical" android:id="@+id/quickreturn_coordinator" android:layout_width="match_parent" android:layout_height="match_parent">
+            <android.support.design.widget.AppBarLayout android:id="@+id/appBarLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/appbar_container" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_scrollFlags="15">
+                    <android.support.v7.widget.RecyclerView android:id="@+id/recyclerView" android:padding="10dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                    <ImageView android:id="@+id/iv_back" android:background="?attr/selectableItemBackground" android:padding="5dp" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="3dp" android:src="@drawable/arrow_left_black" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </android.support.design.widget.AppBarLayout>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <org.telegram.customization.util.view.observerRecyclerView.ObservableRecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <include layout="@layout/layout_offline"/>
+            </RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

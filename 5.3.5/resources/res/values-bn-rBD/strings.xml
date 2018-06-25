@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">হোম এ নেভিগেট করুন</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">উপরের দিকে নেভিগেট করুন</string>
+    <string name="abc_action_menu_overflow_description">আরো বিকল্প</string>
+    <string name="abc_action_mode_done">সম্পন্ন হয়েছে</string>
+    <string name="abc_activity_chooser_view_see_all">সবগুলো দেখুন</string>
+    <string name="abc_activitychooserview_choose_application">একটি অ্যাপ্লিকেশান বেছে নিন</string>
+    <string name="abc_capital_off">বন্ধ</string>
+    <string name="abc_capital_on">চালু</string>
+    <string name="abc_search_hint">অনুসন্ধান...</string>
+    <string name="abc_searchview_description_clear">ক্যোয়ারী সাফ করুন</string>
+    <string name="abc_searchview_description_query">ক্যোয়ারী অনুসন্ধান করুন</string>
+    <string name="abc_searchview_description_search">অনুসন্ধান করুন</string>
+    <string name="abc_searchview_description_submit">ক্যোয়ারী জমা দিন</string>
+    <string name="abc_searchview_description_voice">ভয়েস অনুসন্ধান</string>
+    <string name="abc_shareactionprovider_share_with">এর সাথে শেয়ার করুন</string>
+    <string name="abc_shareactionprovider_share_with_application">%s এর সাথে শেয়ার করুন</string>
+    <string name="abc_toolbar_collapse_description">সঙ্কুচিত করুন</string>
+    <string name="mdtp_day_picker_description">দিন দিয়ে সংগঠিত মাসের গ্রিড</string>
+    <string name="mdtp_deleted_key">%1$s মুছে ফেলা হয়েছে</string>
+    <string name="mdtp_done_label">সম্পন্ন হয়েছে</string>
+    <string name="mdtp_hour_picker_description">বৃত্তাকার ঘন্টা নির্বাচকের স্লাইডার</string>
+    <string name="mdtp_item_is_selected">%1$s নির্বাচন করা হয়েছে</string>
+    <string name="mdtp_minute_picker_description">বৃত্তাকার মিনিট নির্বাচকের স্লাইডার</string>
+    <string name="mdtp_select_day">মাস এবং দিন নির্বাচন করুন</string>
+    <string name="mdtp_select_hours">ঘন্টা নির্বাচন করুন</string>
+    <string name="mdtp_select_minutes">মিনিট নির্বাচন করুন</string>
+    <string name="mdtp_select_year">বছর নির্বাচন করুন</string>
+    <string name="mdtp_year_picker_description">বছরের তালিকা</string>
+    <string name="search_menu_title">অনুসন্ধান করুন</string>
+    <string name="status_bar_notification_info_overflow">৯৯৯+</string>
+</resources>

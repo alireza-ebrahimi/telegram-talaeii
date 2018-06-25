@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/handle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_reorder_grey" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/black" android:id="@+id/text_view_customer_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/handle" android:layout_centerVertical="true"/>
+</RelativeLayout>

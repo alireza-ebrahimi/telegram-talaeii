@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <utils.view.FarsiTextView android:textSize="16sp" android:textColor="@r$color/black" android:id="@+id/tv_name" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+        <ImageView android:id="@+id/iv_select_status" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="10dp" android:src="@drawable/filter_check" android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    <View android:background="@r$color/light_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+    <utils.view.WidthRelativeLayout android:id="@+id/v1" android:background="@drawable/rounded_border" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@r$dimen/item_margin" android:layout_weight="1" app:horizontalN="1" app:verticalN="1">
+        <utils.view.HeightImageView android:id="@+id/iv_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+        <utils.view.FarsiTextView android:textSize="@r$dimen/home_tag_title_size" android:textColor="@r$color/white" android:id="@+id/ftv_1" android:paddingTop="@r$dimen/item_gradiant" android:paddingRight="10dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:maxLines="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/lock1" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" style="@r$style/lock_image"/>
+    </utils.view.WidthRelativeLayout>
+    <utils.view.WidthRelativeLayout android:id="@+id/v2" android:background="@drawable/rounded_border" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@r$dimen/item_margin" android:layout_weight="1" app:horizontalN="1" app:verticalN="1">
+        <utils.view.HeightImageView android:id="@+id/iv_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+        <utils.view.FarsiTextView android:textSize="@r$dimen/home_tag_title_size" android:textColor="@r$color/white" android:id="@+id/ftv_2" android:paddingTop="@r$dimen/item_gradiant" android:paddingRight="10dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:maxLines="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/lock2" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" style="@r$style/lock_image"/>
+    </utils.view.WidthRelativeLayout>
+    <utils.view.WidthRelativeLayout android:id="@+id/v3" android:background="@drawable/rounded_border" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="@r$dimen/item_margin" android:layout_weight="1" app:horizontalN="1" app:verticalN="1">
+        <utils.view.HeightImageView android:id="@+id/iv_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+        <utils.view.FarsiTextView android:textSize="@r$dimen/home_tag_title_size" android:textColor="@r$color/white" android:id="@+id/ftv_3" android:paddingTop="@r$dimen/item_gradiant" android:paddingRight="10dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:maxLines="1" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/lock3" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" style="@r$style/lock_image"/>
+    </utils.view.WidthRelativeLayout>
+</LinearLayout>

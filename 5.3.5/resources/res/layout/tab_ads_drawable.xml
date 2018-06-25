@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:background="@drawable/tab_ads_selectable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <utils.view.FarsiTextView android:gravity="center" android:layout_gravity="center" android:id="@+id/slsTvCounter" android:paddingLeft="1dp" android:paddingRight="1dp" android:layout_width="20dp" android:layout_height="20dp" android:layout_margin="1dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+</RelativeLayout>

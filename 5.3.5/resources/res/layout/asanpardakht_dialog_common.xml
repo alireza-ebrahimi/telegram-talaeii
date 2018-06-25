@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="17sp" android:textColor="@color/asanpardakht_accentColor" android:gravity="center" android:id="@+id/txt_title" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:background="@color/asanpardakht_accentColor" android:layout_width="match_parent" android:layout_height="3dp"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:id="@+id/txt_message" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <android.support.v7.widget.AppCompatButton android:theme="@style/asanpardakht_SDKTheme.SecondaryButton" android:id="@+id/btn_dialog_negative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" style="android:attr/buttonBarButtonStyle"/>
+        <android.support.v7.widget.AppCompatButton android:theme="@style/asanpardakht_SDKTheme.PrimaryButton" android:id="@+id/btn_dialog_positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" style="android:attr/buttonBarButtonStyle"/>
+    </LinearLayout>
+</LinearLayout>

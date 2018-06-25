@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/header_view" android:paddingBottom="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <utils.view.WidthImageView android:id="@+id/img" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@color/white" android:scaleType="centerCrop"/>
+    <RelativeLayout android:id="@+id/metadata" android:background="@drawable/top_news_title_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+        <utils.view.TitleTextView android:textSize="22sp" android:textColor="@color/white" android:id="@+id/count" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/numIcon" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/numIcon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp" android:src="@drawable/ic_picturse" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <utils.view.CircularProgress android:id="@+id/pb_loading" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true" app:borderWidth="2dp"/>
+</RelativeLayout>

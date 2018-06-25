@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="android_wear_capabilities">
+        <item>telegram_full_app</item>
+    </array>
+    <array name="pugnotification_reply_choices">
+        <item>Yes</item>
+        <item>No</item>
+        <item>Maybe</item>
+    </array>
+</resources>

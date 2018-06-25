@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="1">
+        <utils.view.WidthRelativeLayout android:id="@+id/v2" android:background="@drawable/rounded_border" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_margin="@dimen/item_margin" android:layout_weight="1">
+            <utils.view.HeightImageView android:id="@+id/iv_2" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="centerCrop" android:transitionName="ivMain"/>
+            <utils.view.FarsiTextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/ftv_daily_count2" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="26"/>
+            <View android:id="@+id/ftv_tag_gradient2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <utils.view.FarsiTextView android:textSize="@dimen/home_tag_title_size" android:textColor="@color/white" android:id="@+id/ftv_2" android:paddingTop="@dimen/item_gradiant" android:paddingRight="10dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:layout_alignBottom="@+id/iv_2" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <ImageView android:id="@+id/lock2" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" style="@style/lock_image"/>
+        </utils.view.WidthRelativeLayout>
+        <utils.view.WidthRelativeLayout android:id="@+id/v3" android:background="@drawable/rounded_border" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_margin="@dimen/item_margin" android:layout_weight="1" app:horizontalN="1" app:verticalN="1">
+            <utils.view.HeightImageView android:id="@+id/iv_3" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="centerCrop" android:transitionName="ivMain"/>
+            <utils.view.FarsiTextView android:textSize="20sp" android:textColor="@color/white" android:id="@+id/ftv_31" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="26"/>
+            <View android:id="@+id/ftv_tag_gradient3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <utils.view.FarsiTextView android:textSize="@dimen/home_tag_title_size" android:textColor="@color/white" android:id="@+id/ftv_3" android:paddingTop="@dimen/item_gradiant" android:paddingRight="10dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp" android:layout_alignBottom="@+id/iv_3" android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+            <ImageView android:id="@+id/lock3" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" style="@style/lock_image"/>
+        </utils.view.WidthRelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="2">
+        <utils.view.WidthRelativeLayout android:id="@+id/pagerRL1" android:background="@drawable/rounded_border" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/item_margin" app:horizontalN="2" app:verticalN="2">
+            <utils.view.HeightImageView android:id="@+id/iv_1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:transitionName="ivMain"/>
+            <ImageView android:id="@+id/lock1" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" style="@style/lock_image"/>
+        </utils.view.WidthRelativeLayout>
+    </LinearLayout>
+</LinearLayout>

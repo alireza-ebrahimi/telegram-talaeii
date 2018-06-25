@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:id="@+id/lyt_status" android:background="@drawable/asanpardakht_amount_bg_setare_aval" android:layout_width="match_parent" android:layout_height="35dp">
+    <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="16sp" android:textColor="#fff" android:id="@+id/txt_status_title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:id="@+id/img_status_icon" android:padding="5dp" android:layout_width="35dp" android:layout_height="35dp" android:tint="@color/asanpardakht_white"/>
+</LinearLayout>

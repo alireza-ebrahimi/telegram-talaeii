@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="20dp" android:src="@drawable/coins"/>
+    <utils.view.TitleTextView android:textSize="22dp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/HotgramPayment"/>
+    <utils.view.FarsiTextView android:textSize="13sp" android:textColor="@color/gray" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_user_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:text="شما هنوز در سامانه ثبت نام نکرده اید"/>
+    <utils.view.FarsiButton android:theme="@style/ButtonGreen" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/btn_register_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/signup"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_item_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/btn_payment_report" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="گزارش پرداخت " android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/chevron_left" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <ImageView android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/gray" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/btn_settle_report" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/settleListReport" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/chevron_left" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <ImageView android:layout_width="match_parent" android:layout_height="1dp" android:src="@color/gray" android:layout_alignParentBottom="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_menu_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp"/>
+</LinearLayout>

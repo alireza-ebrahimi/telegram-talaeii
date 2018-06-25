@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48dp</dimen>
+    <dimen name="abc_action_bar_progress_bar_size">32dp</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <dimen name="mdtp_dialog_height">200dp</dimen>
+    <dimen name="mdtp_left_side_width">270dp</dimen>
+    <dimen name="mdtp_selected_date_day_size">100dp</dimen>
+    <dimen name="mdtp_selected_date_month_size">30dp</dimen>
+    <dimen name="mdtp_selected_date_year_size">30dp</dimen>
+</resources>

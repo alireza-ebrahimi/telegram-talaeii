@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_focused="true">
+        <nine-patch android:src="@drawable/asanpardakht_bg_input_focus_setare_aval"/>
+    </item>
+    <item>
+        <nine-patch android:src="@drawable/asanpardakht_bg_input_default_setare_aval"/>
+    </item>
+</selector>

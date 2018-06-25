@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/lp_ll_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_left" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="10dp" android:src="@drawable/arrow_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center" android:id="@+id/iv_icon" android:background="?attr/selectableItemBackground" android:padding="4dp" android:visibility="visible" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="5dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <utils.view.FarsiTextView android:gravity="right" android:id="@+id/title" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/iv_icon" android:layout_toRightOf="@+id/iv_left"/>
+    </RelativeLayout>
+    <View android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

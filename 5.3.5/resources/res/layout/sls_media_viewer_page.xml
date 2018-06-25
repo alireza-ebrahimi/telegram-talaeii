@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@r$color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@r$color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_back" android:padding="4dp" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/arrow_left_white" android:layout_centerVertical="true"/>
+            <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@r$color/white" android:id="@+id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="23/45" android:layout_toRightOf="@+id/iv_back" android:layout_centerVertical="true"/>
+            <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@r$color/white" android:id="@+id/tv_go_to_channel" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/show_in_channel" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <org.telegram.customization.util.view.zoom.TouchImageView android:id="@+id/iv_main" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_video_error" android:background="@r$color/white" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/sad"/>
+            <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/err_play_video"/>
+        </LinearLayout>
+        <VideoView android:id="@+id/video_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="250dp" android:layout_centerInParent="true"/>
+        <ProgressBar android:id="@+id/pbVideo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar android:id="@+id/pb_image_loading" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_centerInParent="true" app:cpb_progress="0" app:cpb_progressbar_width="3dp" app:cpb_background_progressbar_width="2dp"/>
+        <ImageView android:id="@+id/iv_play" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/playvideo_pressed" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <utils.view.FarsiTextView android:textSize="@r$dimen/home_tag_title_size" android:textColor="@r$color/white" android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/ftv_main" android:background="@drawable/top_news_title_bg" android:paddingTop="@r$dimen/item_gradiant" android:paddingRight="10dp" android:paddingBottom="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0dp"/>
+            <RelativeLayout android:background="@drawable/top_news_title_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/white" android:id="@+id/ftv_channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/white" android:id="@+id/ftv_date" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ftv_channel_name" android:layout_alignParentLeft="true"/>
+                <ImageView android:id="@+id/iv_share" android:padding="3dp" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/share" android:layout_alignParentRight="true" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/bottom_layout" android:background="#50000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="70dp" android:layout_alignParentBottom="true">
+                <ImageView android:id="@+id/play_btn" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:src="@drawable/video_btn_on" android:layout_centerVertical="true"/>
+                <utils.view.TitleTextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/play_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="00:00" android:layout_toRightOf="@+id/play_btn" android:layout_centerVertical="true"/>
+                <utils.view.TitleTextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/total_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="00:00" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <SeekBar android:id="@+id/seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:maxHeight="10dp" android:max="100" android:progress="0" android:minHeight="10dp" android:thumbOffset="0dp" android:layout_toLeftOf="@+id/total_time" android:layout_toRightOf="@+id/play_time" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

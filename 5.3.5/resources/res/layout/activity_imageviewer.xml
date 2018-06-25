@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/root" android:background="#dd000000" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/iv_back" android:padding="3dp" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <utils.view.TitleTextView android:textSize="18sp" android:textColor="@r$color/white" android:id="@+id/ftv_image_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/iv_back" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_share" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:src="@drawable/ic_fab_share" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_wallpaper" android:padding="10dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/iv_share" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_download" android:padding="10dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/iv_wallpaper" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_shownews" android:padding="10dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/iv_download" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:id="@+id/root2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+        <org.telegram.customization.util.view.zoom.ExtendedViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <utils.view.FarsiTextView android:textSize="15sp" android:textColor="@r$color/white" android:gravity="right" android:layout_gravity="right" android:id="@+id/news_title" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+</LinearLayout>

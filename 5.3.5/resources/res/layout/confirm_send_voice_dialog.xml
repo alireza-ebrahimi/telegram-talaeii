@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/border_tag_unselected" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <RelativeLayout android:id="@+id/bottom_layout" android:background="#50000000" android:layout_width="match_parent" android:layout_height="70dp" android:layout_alignParentBottom="true">
+        <ImageView android:id="@+id/play_btn" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="15dp" android:src="@drawable/video_btn_down" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/play_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="00:00" android:layout_toRightOf="@+id/play_btn" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@+id/total_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:text="00:00" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <SeekBar android:id="@+id/seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:maxHeight="10dp" android:max="100" android:progress="0" android:minHeight="10dp" android:thumbOffset="0dp" android:layout_toLeftOf="@+id/total_time" android:layout_toRightOf="@+id/play_time" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <Button android:id="@+id/button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="بی خیال"/>
+        <Button android:id="@+id/button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="بفرست"/>
+    </LinearLayout>
+</LinearLayout>

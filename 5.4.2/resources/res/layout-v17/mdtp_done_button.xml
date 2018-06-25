@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="end" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/done_background" android:background="@android:color/transparent" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="56dp">
+    <Button android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/mdtp_cancel" android:layout_marginEnd="8dp" style="@style/mdtp_ActionButton_Text"/>
+    <Button android:id="@+id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="@string/mdtp_ok" android:layout_marginEnd="16dp" style="@style/mdtp_ActionButton_Text"/>
+</LinearLayout>

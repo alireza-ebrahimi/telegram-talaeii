@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@r$color/black" android:id="@+id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/choose_theme" android:layout_centerHorizontal="true"/>
+    <ProgressBar android:id="@+id/pb_loading" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tv1"/>
+    <utils.view.FarsiTextView android:id="@+id/btn_retry" android:background="@r$color/red" android:paddingLeft="25dp" android:paddingTop="5dp" android:paddingRight="25dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:layout_centerInParent="true"/>
+</RelativeLayout>

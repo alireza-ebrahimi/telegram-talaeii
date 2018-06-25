@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root" android:background="@r$color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="1dp">
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/iv_channel_item" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="4dp" android:src="@drawable/gizmiz" android:layout_alignParentRight="true"/>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_channel_item" android:layout_centerVertical="true">
+        <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/black" android:id="@+id/tv_channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="گیزمیز"/>
+        <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/gray" android:id="@+id/tv_channel_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="۱۲۳۶ نفر" android:layout_toLeftOf="@+id/iv_channel_item" android:layout_below="@+id/tv_channel_name"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_selected" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="5dp" android:src="@drawable/check_circle_gray" android:layout_centerVertical="true"/>
+</RelativeLayout>

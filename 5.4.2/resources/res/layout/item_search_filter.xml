@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/search_filter_bg" android:padding="7dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp">
+    <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="در همه شاخه ها" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/chev" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="10dp" android:src="@drawable/menu_down" android:layout_centerVertical="true"/>
+    <utils.view.FarsiTextView android:textSize="10dp" android:textColor="@color/light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ویرایش" android:layout_toRightOf="@+id/chev" android:layout_centerVertical="true"/>
+</RelativeLayout>

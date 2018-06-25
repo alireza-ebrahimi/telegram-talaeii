@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="17sp" android:gravity="center_horizontal" android:id="@+id/txt_auth_code" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="300dp">
+        <TextView android:id="@+id/txt_description" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/asanpardakht_info_how_to_trust_to_sdk"/>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <android.support.v7.widget.AppCompatButton android:theme="@style/asanpardakht_SDKTheme.SecondaryButton" android:id="@+id/btn_through_ussd" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/asanpardakht_action_through_ussd" android:layout_weight="1"/>
+        <android.support.v7.widget.AppCompatButton android:theme="@style/asanpardakht_SDKTheme.PrimaryButton" android:id="@+id/btn_through_web" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/asanpardakht_action_through_web" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

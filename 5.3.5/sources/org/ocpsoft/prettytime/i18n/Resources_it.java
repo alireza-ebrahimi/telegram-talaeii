@@ -1,0 +1,112 @@
+package org.ocpsoft.prettytime.i18n;
+
+import com.persianswitch.sdk.base.manager.LanguageManager;
+import java.util.ListResourceBundle;
+
+public class Resources_it extends ListResourceBundle {
+    private static final Object[][] OBJECTS;
+
+    static {
+        r0 = new Object[95][];
+        r0[0] = new Object[]{"CenturyPattern", "%n %u"};
+        r0[1] = new Object[]{"CenturyFuturePrefix", "fra"};
+        r0[2] = new Object[]{"CenturyFutureSuffix", ""};
+        r0[3] = new Object[]{"CenturyPastPrefix", ""};
+        r0[4] = new Object[]{"CenturyPastSuffix", LanguageManager.PERSIAN};
+        r0[5] = new Object[]{"CenturySingularName", "secolo"};
+        r0[6] = new Object[]{"CenturyPluralName", "secoli"};
+        r0[7] = new Object[]{"DayPattern", "%n %u"};
+        r0[8] = new Object[]{"DayFuturePrefix", "fra"};
+        r0[9] = new Object[]{"DayFutureSuffix", ""};
+        r0[10] = new Object[]{"DayPastPrefix", ""};
+        r0[11] = new Object[]{"DayPastSuffix", LanguageManager.PERSIAN};
+        r0[12] = new Object[]{"DaySingularName", "giorno"};
+        r0[13] = new Object[]{"DayPluralName", "giorni"};
+        r0[14] = new Object[]{"DayFutureSingularName", "giorno"};
+        r0[15] = new Object[]{"DayFuturePluralName", "giorni"};
+        r0[16] = new Object[]{"DayPastSingularName", "giorno"};
+        r0[17] = new Object[]{"DayPastPluralName", "giorni"};
+        r0[18] = new Object[]{"DecadePattern", "%n %u"};
+        r0[19] = new Object[]{"DecadeFuturePrefix", "fra"};
+        r0[20] = new Object[]{"DecadeFutureSuffix", ""};
+        r0[21] = new Object[]{"DecadePastPrefix", ""};
+        r0[22] = new Object[]{"DecadePastSuffix", LanguageManager.PERSIAN};
+        r0[23] = new Object[]{"DecadeSingularName", "decennio"};
+        r0[24] = new Object[]{"DecadePluralName", "decenni"};
+        r0[25] = new Object[]{"HourPattern", "%n %u"};
+        r0[26] = new Object[]{"HourFuturePrefix", "fra"};
+        r0[27] = new Object[]{"HourFutureSuffix", ""};
+        r0[28] = new Object[]{"HourPastPrefix", ""};
+        r0[29] = new Object[]{"HourPastSuffix", LanguageManager.PERSIAN};
+        r0[30] = new Object[]{"HourSingularName", "ora"};
+        r0[31] = new Object[]{"HourPluralName", "ore"};
+        r0[32] = new Object[]{"JustNowPattern", "%u"};
+        r0[33] = new Object[]{"JustNowFuturePrefix", ""};
+        r0[34] = new Object[]{"JustNowFutureSuffix", "fra poco"};
+        r0[35] = new Object[]{"JustNowPastPrefix", "poco fa"};
+        r0[36] = new Object[]{"JustNowPastSuffix", ""};
+        r0[37] = new Object[]{"JustNowSingularName", ""};
+        r0[38] = new Object[]{"JustNowPluralName", ""};
+        r0[39] = new Object[]{"MillenniumPattern", "%n %u"};
+        r0[40] = new Object[]{"MillenniumFuturePrefix", "fra"};
+        r0[41] = new Object[]{"MillenniumFutureSuffix", ""};
+        r0[42] = new Object[]{"MillenniumPastPrefix", ""};
+        r0[43] = new Object[]{"MillenniumPastSuffix", LanguageManager.PERSIAN};
+        r0[44] = new Object[]{"MillenniumSingularName", "millennio"};
+        r0[45] = new Object[]{"MillenniumPluralName", "millenni"};
+        r0[46] = new Object[]{"MillisecondPattern", "%n %u"};
+        r0[47] = new Object[]{"MillisecondFuturePrefix", "fra"};
+        r0[48] = new Object[]{"MillisecondFutureSuffix", ""};
+        r0[49] = new Object[]{"MillisecondPastPrefix", ""};
+        r0[50] = new Object[]{"MillisecondPastSuffix", LanguageManager.PERSIAN};
+        r0[51] = new Object[]{"MillisecondSingularName", "millisecondo"};
+        r0[52] = new Object[]{"MillisecondPluralName", "millisecondi"};
+        r0[53] = new Object[]{"MinutePattern", "%n %u"};
+        r0[54] = new Object[]{"MinuteFuturePrefix", "fra"};
+        r0[55] = new Object[]{"MinuteFutureSuffix", ""};
+        r0[56] = new Object[]{"MinutePastPrefix", ""};
+        r0[57] = new Object[]{"MinutePastSuffix", LanguageManager.PERSIAN};
+        r0[58] = new Object[]{"MinuteSingularName", "minuto"};
+        r0[59] = new Object[]{"MinutePluralName", "minuti"};
+        r0[60] = new Object[]{"MonthPattern", "%n %u"};
+        r0[61] = new Object[]{"MonthFuturePrefix", "fra"};
+        r0[62] = new Object[]{"MonthFutureSuffix", ""};
+        r0[63] = new Object[]{"MonthPastPrefix", ""};
+        r0[64] = new Object[]{"MonthPastSuffix", LanguageManager.PERSIAN};
+        r0[65] = new Object[]{"MonthSingularName", "mese"};
+        r0[66] = new Object[]{"MonthPluralName", "mesi"};
+        r0[67] = new Object[]{"SecondPattern", "%n %u"};
+        r0[68] = new Object[]{"SecondFuturePrefix", "fra"};
+        r0[69] = new Object[]{"SecondFutureSuffix", ""};
+        r0[70] = new Object[]{"SecondPastPrefix", ""};
+        r0[71] = new Object[]{"SecondPastSuffix", LanguageManager.PERSIAN};
+        r0[72] = new Object[]{"SecondSingularName", "secondo"};
+        r0[73] = new Object[]{"SecondPluralName", "secondi"};
+        r0[74] = new Object[]{"WeekPattern", "%n %u"};
+        r0[75] = new Object[]{"WeekFuturePrefix", "fra"};
+        r0[76] = new Object[]{"WeekFutureSuffix", ""};
+        r0[77] = new Object[]{"WeekPastPrefix", ""};
+        r0[78] = new Object[]{"WeekPastSuffix", LanguageManager.PERSIAN};
+        r0[79] = new Object[]{"WeekSingularName", "settimana"};
+        r0[80] = new Object[]{"WeekPluralName", "settimane"};
+        r0[81] = new Object[]{"YearPattern", "%n %u"};
+        r0[82] = new Object[]{"YearFuturePrefix", "fra"};
+        r0[83] = new Object[]{"YearFutureSuffix", ""};
+        r0[84] = new Object[]{"YearPastPrefix", ""};
+        r0[85] = new Object[]{"YearPastSuffix", LanguageManager.PERSIAN};
+        r0[86] = new Object[]{"YearSingularName", "anno"};
+        r0[87] = new Object[]{"YearPluralName", "anni"};
+        r0[88] = new Object[]{"AbstractTimeUnitPattern", ""};
+        r0[89] = new Object[]{"AbstractTimeUnitFuturePrefix", ""};
+        r0[90] = new Object[]{"AbstractTimeUnitFutureSuffix", ""};
+        r0[91] = new Object[]{"AbstractTimeUnitPastPrefix", ""};
+        r0[92] = new Object[]{"AbstractTimeUnitPastSuffix", ""};
+        r0[93] = new Object[]{"AbstractTimeUnitSingularName", ""};
+        r0[94] = new Object[]{"AbstractTimeUnitPluralName", ""};
+        OBJECTS = r0;
+    }
+
+    protected Object[][] getContents() {
+        return OBJECTS;
+    }
+}

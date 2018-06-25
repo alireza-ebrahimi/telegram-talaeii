@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="right" android:orientation="vertical" android:background="@drawable/confirm_box_color1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_close" android:background="?android:attr/selectableItemBackground" android:padding="5dp" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_close"/>
+        <utils.view.TitleTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@r$color/black" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="توجه" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_change_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+        <utils.view.FarsiTextView android:textColor="@r$color/black" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="این برنامه با دستگاه شما سازگار نیست.با تشکر از انتخاب شما"/>
+        <utils.view.TitleTextView android:textColor="@r$color/white" android:layout_gravity="center" android:id="@+id/btn_close" android:background="@r$color/green" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="فهمیدم"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:background="@r$color/dark_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:background="@drawable/confirm_box_color1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_close" android:background="?android:attr/selectableItemBackground" android:padding="5dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_close"/>
+            <utils.view.TitleTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@r$color/black" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/IdFinder" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <EditText android:textColor="@r$color/black" android:textColorHint="@r$color/gray_light" android:id="@+id/et_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="آی دی" android:inputType="text" android:imeOptions="actionSearch"/>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_btn_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp">
+            <utils.view.FarsiTextView android:textSize="16sp" android:textColor="@r$color/colorPrimary" android:id="@+id/download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search" android:layout_alignParentLeft="true"/>
+            <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@r$color/gray" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/canceltext" android:layout_toRightOf="@+id/download" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

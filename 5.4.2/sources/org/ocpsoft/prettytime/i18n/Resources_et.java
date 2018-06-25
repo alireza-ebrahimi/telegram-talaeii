@@ -1,0 +1,110 @@
+package org.ocpsoft.prettytime.i18n;
+
+public class Resources_et extends Resources_fi {
+    /* renamed from: a */
+    private static final Object[][] f8239a;
+
+    static {
+        r0 = new Object[95][];
+        r0[0] = new Object[]{"CenturyPattern", "%u"};
+        r0[1] = new Object[]{"CenturyPluralPattern", "%n %u"};
+        r0[2] = new Object[]{"CenturyPastSingularName", "sajand"};
+        r0[3] = new Object[]{"CenturyPastPluralName", "sajandit"};
+        r0[4] = new Object[]{"CenturyFutureSingularName", "sajandi"};
+        r0[5] = new Object[]{"CenturyPastSuffix", "tagasi"};
+        r0[6] = new Object[]{"CenturyFutureSuffix", "pärast"};
+        r0[7] = new Object[]{"DayPattern", "%u"};
+        r0[8] = new Object[]{"DayPluralPattern", "%n %u"};
+        r0[9] = new Object[]{"DayPastSingularName", "eile"};
+        r0[10] = new Object[]{"DayPastPluralName", "päeva"};
+        r0[11] = new Object[]{"DayFutureSingularName", "homme"};
+        r0[12] = new Object[]{"DayFuturePluralName", "päeva"};
+        r0[13] = new Object[]{"DayPastSuffix", "tagasi"};
+        r0[14] = new Object[]{"DayFutureSuffix", "pärast"};
+        r0[15] = new Object[]{"DecadePattern", "%u"};
+        r0[16] = new Object[]{"DecadePluralPattern", "%n %u"};
+        r0[17] = new Object[]{"DecadePastSingularName", "aastakümme"};
+        r0[18] = new Object[]{"DecadePastPluralName", "aastakümmet"};
+        r0[19] = new Object[]{"DecadeFutureSingularName", "aastakümne"};
+        r0[20] = new Object[]{"DecadePastSuffix", "tagasi"};
+        r0[21] = new Object[]{"DecadeFutureSuffix", "pärast"};
+        r0[22] = new Object[]{"HourPattern", "%u"};
+        r0[23] = new Object[]{"HourPluralPattern", "%n %u"};
+        r0[24] = new Object[]{"HourPastSingularName", "tund"};
+        r0[25] = new Object[]{"HourPastPluralName", "tundi"};
+        r0[26] = new Object[]{"HourFutureSingularName", "tunni"};
+        r0[27] = new Object[]{"HourPastSuffix", "tagasi"};
+        r0[28] = new Object[]{"HourFutureSuffix", "pärast"};
+        r0[29] = new Object[]{"JustNowPattern", "%u"};
+        r0[30] = new Object[]{"JustNowPastSingularName", "hetk"};
+        r0[31] = new Object[]{"JustNowFutureSingularName", "hetke"};
+        r0[32] = new Object[]{"JustNowPastSuffix", "tagasi"};
+        r0[33] = new Object[]{"JustNowFutureSuffix", "pärast"};
+        r0[34] = new Object[]{"MillenniumPattern", "%u"};
+        r0[35] = new Object[]{"MillenniumPluralPattern", "%n %u"};
+        r0[36] = new Object[]{"MillenniumPastSingularName", "aastatuhat"};
+        r0[37] = new Object[]{"MillenniumPastPluralName", "aastatuhandet"};
+        r0[38] = new Object[]{"MillenniumFutureSingularName", "aastatuhande"};
+        r0[39] = new Object[]{"MillenniumPastSuffix", "tagasi"};
+        r0[40] = new Object[]{"MillenniumFutureSuffix", "pärast"};
+        r0[41] = new Object[]{"MillisecondPattern", "%u"};
+        r0[42] = new Object[]{"MillisecondPluralPattern", "%n %u"};
+        r0[43] = new Object[]{"MillisecondPastSingularName", "millisekund"};
+        r0[44] = new Object[]{"MillisecondPastPluralName", "millisekundit"};
+        r0[45] = new Object[]{"MillisecondFutureSingularName", "millisekundi"};
+        r0[46] = new Object[]{"MillisecondFuturePluralName", "millisekundi"};
+        r0[47] = new Object[]{"MillisecondPastSuffix", "tagasi"};
+        r0[48] = new Object[]{"MillisecondFutureSuffix", "pärast"};
+        r0[49] = new Object[]{"MinutePattern", "%u"};
+        r0[50] = new Object[]{"MinutePluralPattern", "%n %u"};
+        r0[51] = new Object[]{"MinutePastSingularName", "minut"};
+        r0[52] = new Object[]{"MinutePastPluralName", "minutit"};
+        r0[53] = new Object[]{"MinuteFutureSingularName", "minuti"};
+        r0[54] = new Object[]{"MinuteFuturePluralName", "minuti"};
+        r0[55] = new Object[]{"MinutePastSuffix", "tagasi"};
+        r0[56] = new Object[]{"MinuteFutureSuffix", "pärast"};
+        r0[57] = new Object[]{"MonthPattern", "%u"};
+        r0[58] = new Object[]{"MonthPluralPattern", "%n %u"};
+        r0[59] = new Object[]{"MonthPastSingularName", "kuu"};
+        r0[60] = new Object[]{"MonthPastPluralName", "kuud"};
+        r0[61] = new Object[]{"MonthFutureSingularName", "kuu"};
+        r0[62] = new Object[]{"MonthPastSuffix", "tagasi"};
+        r0[63] = new Object[]{"MonthFutureSuffix", "pärast"};
+        r0[64] = new Object[]{"SecondPattern", "%u"};
+        r0[65] = new Object[]{"SecondPluralPattern", "%n %u"};
+        r0[66] = new Object[]{"SecondPastSingularName", "sekund"};
+        r0[67] = new Object[]{"SecondPastPluralName", "sekundit"};
+        r0[68] = new Object[]{"SecondFutureSingularName", "sekundi"};
+        r0[69] = new Object[]{"SecondFuturePluralName", "sekundi"};
+        r0[70] = new Object[]{"SecondPastSuffix", "tagasi"};
+        r0[71] = new Object[]{"SecondFutureSuffix", "pärast"};
+        r0[72] = new Object[]{"WeekPattern", "%u"};
+        r0[73] = new Object[]{"WeekPluralPattern", "%n %u"};
+        r0[74] = new Object[]{"WeekPastSingularName", "nädal"};
+        r0[75] = new Object[]{"WeekPastPluralName", "nädalat"};
+        r0[76] = new Object[]{"WeekFutureSingularName", "nädala"};
+        r0[77] = new Object[]{"WeekFuturePluralName", "nädala"};
+        r0[78] = new Object[]{"WeekPastSuffix", "tagasi"};
+        r0[79] = new Object[]{"WeekFutureSuffix", "pärast"};
+        r0[80] = new Object[]{"YearPattern", "%u"};
+        r0[81] = new Object[]{"YearPluralPattern", "%n %u"};
+        r0[82] = new Object[]{"YearPastSingularName", "aasta"};
+        r0[83] = new Object[]{"YearPastPluralName", "aastat"};
+        r0[84] = new Object[]{"YearFutureSingularName", "aasta"};
+        r0[85] = new Object[]{"YearFuturePluralName", "aasta"};
+        r0[86] = new Object[]{"YearPastSuffix", "tagasi"};
+        r0[87] = new Object[]{"YearFutureSuffix", "pärast"};
+        r0[88] = new Object[]{"AbstractTimeUnitPattern", TtmlNode.ANONYMOUS_REGION_ID};
+        r0[89] = new Object[]{"AbstractTimeUnitFuturePrefix", TtmlNode.ANONYMOUS_REGION_ID};
+        r0[90] = new Object[]{"AbstractTimeUnitFutureSuffix", TtmlNode.ANONYMOUS_REGION_ID};
+        r0[91] = new Object[]{"AbstractTimeUnitPastPrefix", TtmlNode.ANONYMOUS_REGION_ID};
+        r0[92] = new Object[]{"AbstractTimeUnitPastSuffix", TtmlNode.ANONYMOUS_REGION_ID};
+        r0[93] = new Object[]{"AbstractTimeUnitSingularName", TtmlNode.ANONYMOUS_REGION_ID};
+        r0[94] = new Object[]{"AbstractTimeUnitPluralName", TtmlNode.ANONYMOUS_REGION_ID};
+        f8239a = r0;
+    }
+
+    protected Object[][] getContents() {
+        return f8239a;
+    }
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="300dp">
+    <ImageView android:id="@+id/iv_lock" android:background="@r$color/dark_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="300dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@r$color/page_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <utils.view.FarsiTextView android:textColor="@r$color/red" android:id="@+id/btn_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/close" android:layout_alignParentLeft="true"/>
+            <utils.view.FarsiTextView android:textColor="@r$color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/requestـMoney" android:layout_centerHorizontal="true"/>
+            <utils.view.FarsiTextView android:textColor="@r$color/blue" android:id="@+id/btn_send_request" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/send_message" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <utils.view.TitleTextView android:textSize="20sp" android:textColor="@r$color/blue_link" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/amount_hint"/>
+        <org.telegram.customization.util.NumericEditText android:textColorHint="@r$color/light_black" android:id="@+id/et_amount" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:hint="@string/amount_hint" android:inputType="number"/>
+        <utils.view.FarsiEditText android:id="@+id/et_desc" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:hint="@string/description"/>
+    </LinearLayout>
+    <ProgressBar android:id="@+id/pb_loading" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/rl_fade" android:background="@r$color/dark_transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

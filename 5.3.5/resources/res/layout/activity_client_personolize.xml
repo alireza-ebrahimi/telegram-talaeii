@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:background="@r$color/dark_transparent2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:background="@drawable/confirm_box_color1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="15dp">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_close" android:background="?android:attr/selectableItemBackground" android:padding="5dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_close"/>
+            <utils.view.TitleTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@r$color/black" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/theme_customize" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_btn_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true">
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/white" android:id="@+id/btn_next" android:background="@r$color/green" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Next" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_change_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_above="@+id/ll_btn_container" android:layout_alignParentTop="true">
+                <android.support.v4.view.ViewPager android:id="@+id/pager" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <com.github.vivchar.viewpagerindicator.ViewPagerIndicator android:id="@+id/view_pager_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/ll_btn_container" android:layout_centerHorizontal="true" app:itemSize="16dp" app:itemScale="0.8" app:itemSelectedTint="@r$color/colorPrimary" app:itemTint="@r$color/colorPrimary" app:delimiterSize="8dp" app:itemIcon="@drawable/circle"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

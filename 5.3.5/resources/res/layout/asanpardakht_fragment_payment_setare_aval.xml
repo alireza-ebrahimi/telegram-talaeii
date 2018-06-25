@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/scroll_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/asanpardakht_fake_request_focus"/>
+        <include layout="@layout/asanpardakht_toolbar_setare_aval"/>
+        <View android:background="#c6c6c6" android:layout_width="match_parent" android:layout_height="4dp"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/asanpardakht_header_logo_setare_aval"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="1" style="@style/asanpardakht_SDKTheme_setare_aval.FormStyle">
+                <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8dp">
+                    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_merchant_info" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="16sp" android:textColor="#707070" android:gravity="center_horizontal" android:id="@+id/txt_merchant_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+                        <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="16sp" android:textColor="#707070" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@+id/txt_payment_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+                    </LinearLayout>
+                    <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:id="@+id/txt_amount" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_alignParentBottom="true" style="@style/asanpardakht_SDKTheme_setare_aval.AmountField"/>
+                </LinearLayout>
+                <com.persianswitch.sdk.base.widgets.edittext.ApLabelAutoComplete android:id="@+id/edt_card_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/asanpardakht_field_min_height" android:hint="@string/asanpardakht_card_no_hint" android:maxLength="23" android:inputType="number" app:asanpardakht_label="@string/asanpardakht_card_no" style="@style/asanpardakht_SDKTheme_setare_aval.FormStyle.FormInput"/>
+                <com.persianswitch.sdk.base.widgets.edittext.ApLabelEditText android:id="@+id/edt_pin2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:minHeight="@dimen/asanpardakht_field_min_height" android:hint="@string/asanpardakht_pin2_hint" android:maxLength="12" android:inputType="numberPassword" app:asanpardakht_label="@string/asanpardakht_pin2" style="@style/asanpardakht_SDKTheme_setare_aval.FormStyle.FormInput"/>
+                <com.persianswitch.sdk.base.widgets.edittext.ApLabelEditText android:id="@+id/edt_cvv2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:minHeight="@dimen/asanpardakht_field_min_height" android:hint="@string/asanpardakht_cvv2" android:maxLength="4" android:inputType="numberPassword" app:asanpardakht_nextInput="@+id/asanpardakht_edt_card_expiration_month" app:asanpardakht_label="@string/asanpardakht_cvv2" style="@style/asanpardakht_SDKTheme_setare_aval.FormStyle.FormInput"/>
+                <com.persianswitch.sdk.base.widgets.edittext.ApLabelCardExpire android:id="@+id/edt_expiration_date" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:minHeight="@dimen/asanpardakht_field_min_height" app:asanpardakht_label="@string/asanpardakht_expiry" app:asanpardakht_monthHint="@string/asanpardakht_month" app:asanpardakht_yearHint="@string/asanpardakht_year" style="@style/asanpardakht_SDKTheme_setare_aval.FormStyle.FormInput"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <android.support.v7.widget.AppCompatButton android:id="@+id/btn_cancel" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/asanpardakht_cancel" android:layout_weight="1" style="@style/asanpardakht_SDKTheme_setare_aval.SecondaryButton"/>
+                    <android.support.v7.widget.AppCompatButton android:id="@+id/btn_pay" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/asanpardakht_pay" android:layout_weight="1" style="@style/asanpardakht_SDKTheme_setare_aval.PrimaryButton"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lyt_trust_sdk" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="4dp" android:src="@drawable/asanpardakht_ic_trust" android:adjustViewBounds="true" android:tint="@color/asanpardakht_SDKTheme_setare_aval_accent_color"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

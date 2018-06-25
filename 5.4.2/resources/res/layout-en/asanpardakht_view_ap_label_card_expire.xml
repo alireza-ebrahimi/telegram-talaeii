@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="@dimen/asanpardakht_text_font_size" android:gravity="center_vertical" android:id="@+id/ap_txt_label" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="30dp" android:lines="1" android:layout_weight="0.3" style="@style/asanpardakht_InvertTextViewStyle"/>
+    <LinearLayout android:gravity="center" android:addStatesFromChildren="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.8">
+        <EditText android:gravity="center" android:id="@+id/asanpardakht_edt_card_expiration_year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:maxLength="2" android:inputType="numberPassword" android:imeOptions="actionDone" style="@style/asanpardakht_InvertEditTextStyle"/>
+        <TextView android:id="@+id/ap_txt_separator" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/asanpardakht_InvertTextViewStyle"/>
+        <EditText android:gravity="center" android:id="@+id/asanpardakht_edt_card_expiration_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="50dp" android:maxLength="2" android:inputType="numberPassword" android:imeOptions="actionNext" style="@style/asanpardakht_InvertEditTextStyle"/>
+    </LinearLayout>
+</merge>

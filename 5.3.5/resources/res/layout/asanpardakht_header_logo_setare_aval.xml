@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_merchant_logo" android:layout_width="wrap_content" android:layout_height="76dp" android:layout_margin="24dp" android:src="@drawable/asanpardakht_ic_logo_setare_aval" android:adjustViewBounds="true"/>
+    <android.support.v7.widget.AppCompatImageView android:layout_width="match_parent" android:layout_height="12dp" android:scaleType="fitXY" app:srcCompat="@drawable/asanpardakht_top_half_circle_white"/>
+</LinearLayout>

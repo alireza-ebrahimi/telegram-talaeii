@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/lp_ll_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@r$color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageView android:id="@+id/iv_image" android:layout_width="96dp" android:layout_height="96dp" android:layout_margin="8dp"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:padding="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/search_in"/>
+            <utils.view.TitleTextView android:textSize="18sp" android:textColor="@r$color/black" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/gray" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/whole_telegram"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.4">
+        <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="@dimen/asanpardakht_text_font_size" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/ap_txt_label" android:padding="5dp" android:layout_width="0dp" android:layout_height="match_parent" android:lines="1" android:layout_weight="1" style="@style/asanpardakht_InvertTextViewStyle"/>
+        <ImageView android:id="@+id/ap_img_start" android:visibility="gone" android:layout_width="30dp" android:layout_height="match_parent" android:adjustViewBounds="true"/>
+    </LinearLayout>
+    <com.persianswitch.sdk.base.widgets.edittext.APAutoCompleteTextView android:layout_gravity="center_horizontal" android:id="@+id/ap_edt_input" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.8" android:inputType="numberPassword" style="@style/asanpardakht_InvertEditTextStyle"/>
+    <ImageView android:id="@+id/ap_img_end" android:visibility="gone" android:layout_width="30dp" android:layout_height="match_parent" android:adjustViewBounds="true"/>
+</merge>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/main" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/ivThumb" android:layout_width="match_parent" android:layout_height="@r$dimen/content_height" android:scaleType="centerCrop"/>
+            <VideoView android:id="@+id/vvMain" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@r$dimen/content_height" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/ivMain" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@r$dimen/content_height" android:scaleType="centerCrop" android:layout_toRightOf="@+id/vvMain" android:layout_alignParentTop="true"/>
+            <ImageView android:id="@+id/ivPlayStreamVideo" android:padding="10dp" android:visibility="gone" android:layout_width="55dp" android:layout_height="55dp" android:src="@drawable/playvideo_pressed" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            <ImageView android:id="@+id/ivPlayVideo" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/playvideo_pressed" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_share" android:background="@drawable/share_bg" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="10dp" android:src="@drawable/sls_share" android:layout_alignParentRight="true"/>
+            <org.telegram.customization.util.view.CircularProgressBarAutoRotate android:id="@+id/pb_image_loading" android:visibility="gone" android:layout_width="45dp" android:layout_height="45dp" android:layout_centerInParent="true" app:cpb_progress="0" app:cpb_progressbar_color="@r$color/white" app:cpb_background_progressbar_color="#ffcdd2" app:cpb_progressbar_width="3dp" app:cpb_background_progressbar_width="2dp"/>
+            <LinearLayout android:gravity="center" android:id="@+id/freeView" android:background="@drawable/semi_curve_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_alignParentLeft="true">
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/freeViewLabel" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_audio_container" android:background="@drawable/border_audio" android:padding="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <RelativeLayout android:id="@+id/rl_dl_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@+id/iv_download_music" android:layout_width="45dp" android:layout_height="45dp" android:layout_centerInParent="true"/>
+                <org.telegram.customization.util.view.CircularProgressBarAutoRotate android:id="@+id/pb_music" android:visibility="invisible" android:layout_width="42dp" android:layout_height="42dp" android:layout_centerInParent="true" app:cpb_progress="0" app:cpb_progressbar_color="@r$color/white" app:cpb_background_progressbar_color="#ffcdd2" app:cpb_progressbar_width="3dp" app:cpb_background_progressbar_width="2dp"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/rl_dl_container" android:layout_centerVertical="true">
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@r$color/black" android:gravity="right" android:id="@+id/tv_file_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+                <utils.view.TitleTextView android:textSize="12sp" android:textColor="@r$color/black" android:gravity="right" android:id="@+id/tv_file_provider" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_bottom_container" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/ivChannelImage" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/iv_share_text_msg" android:background="@drawable/share_bg" android:visibility="gone" android:layout_width="30dp" android:layout_height="30dp" android:layout_margin="10dp" android:src="@drawable/sls_share" android:layout_below="@+id/ivChannelImage" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/iv_more" android:layout_width="50dp" android:layout_height="30dp" android:src="@drawable/dots_vertical" android:layout_alignParentLeft="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_title_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/ivChannelImage" android:layout_toRightOf="@+id/iv_more">
+                <utils.view.TitleTextView android:textSize="@r$dimen/message_text_size" android:textColor="@r$color/black" android:ellipsize="end" android:gravity="right" android:id="@+id/tvChannelNameWithImage" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="گیزمیز" android:maxLines="1"/>
+                <utils.view.FarsiTextView android:textSize="@r$dimen/message_text_size" android:textColor="@r$color/message_item_color" android:ellipsize="end" android:gravity="right" android:id="@+id/tvMessageText" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingMultiplier="1.5"/>
+                <utils.view.TitleTextView android:textSize="@r$dimen/message_text_size" android:textColor="@r$color/black" android:ellipsize="end" android:gravity="right" android:id="@+id/tvChannelName" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1"/>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ll_title_container" android:layout_alignParentLeft="true">
+                <ImageView android:id="@+id/iv_eye" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/eye" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@r$color/gray" android:id="@+id/tvViews" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/iv_eye" android:layout_centerVertical="true"/>
+                <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@r$color/gray" android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15sp" android:layout_toRightOf="@+id/tvViews" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

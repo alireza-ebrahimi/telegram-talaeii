@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="@color/primary_light" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/iv_back" android:background="?attr/selectableItemBackground" android:padding="4dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginRight="4dp" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/my_tags" android:layout_toLeftOf="@+id/iv_back" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <org.telegram.customization.util.view.observerRecyclerView.ObservableRecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/toolbar"/>
+    <ProgressBar android:id="@+id/pb_loading" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true"/>
+    <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/gray" android:id="@+id/ftv_empty_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="هیچ تگی وجود ندارد" android:layout_centerInParent="true"/>
+</RelativeLayout>

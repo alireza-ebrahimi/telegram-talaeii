@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <utils.view.FarsiTextView android:textSize="18sp" android:textColor="@r$color/light_black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="نتیجه ای یافت نشد"/>
+</LinearLayout>

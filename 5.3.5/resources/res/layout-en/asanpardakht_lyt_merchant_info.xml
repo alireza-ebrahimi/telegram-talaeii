@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/lyt_merchant_info" android:layout_width="match_parent" android:layout_height="85dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+    <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:id="@+id/txt_amount" android:paddingLeft="45dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="5dp" android:layout_alignParentBottom="true" style="@style/asanpardakht_SDKTheme.AmountField"/>
+    <com.persianswitch.sdk.base.widgets.CircleImageView android:id="@+id/img_merchant_logo" android:background="@drawable/asanpardakht_circle_logo_bg" android:padding="4dp" android:layout_width="70dp" android:layout_height="70dp" android:layout_alignBottom="@+id/txt_amount" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toRightOf="@+id/img_merchant_logo" android:layout_above="@+id/txt_amount">
+        <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="20sp" android:id="@+id/txt_merchant_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+        <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:layout_gravity="center_vertical" android:id="@+id/txt_payment_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="2"/>
+    </LinearLayout>
+</RelativeLayout>

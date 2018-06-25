@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <tab id="@+id/tab_news" icon="@drawable/ic_newspaper" title=""/>
+    <tab id="@+id/tab_search" icon="@drawable/ic_search" title=""/>
+    <tab id="@+id/tab_hottest" icon="@drawable/ic_hot" title=""/>
+    <tab id="@+id/tab_home" icon="@drawable/ic_teleg_bar" title=""/>
+</tabs>

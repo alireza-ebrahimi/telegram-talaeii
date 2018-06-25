@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatButton android:gravity="center" android:orientation="horizontal" android:id="@+id/lyt_sync_card_error" android:background="@drawable/asanpardakht_sync_card_button_error_bg" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/asanpardakht_action_resync_cards_due_error"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/lyt_sync_card_progress" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_width="30dp" android:layout_height="30dp" android:text="@string/asanpardakht_text_syncing_cards"/>
+    </LinearLayout>
+    <android.support.v7.widget.AppCompatButton android:gravity="center" android:orientation="horizontal" android:id="@+id/lyt_sync_card_normal" android:background="@drawable/asanpardakht_sync_card_button_normal_bg" android:padding="5dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/asanpardakht_action_sync_cards"/>
+</FrameLayout>

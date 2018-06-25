@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <integer name="ga_sessionTimeout">300
+    </integer>
+    <bool name="ga_autoActivityTracking">true
+    </bool>
+    <string name="ga_trackingId">UA-45524517-33
+    </string>
+    <string name="ga_sampleFrequency">100.0
+    </string>
+    <bool name="ga_reportUncaughtExceptions">true
+    </bool>
+</resources>
