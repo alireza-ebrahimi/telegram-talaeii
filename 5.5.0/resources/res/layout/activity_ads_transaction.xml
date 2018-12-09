@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="#efeff4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingTop="20sp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="1dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <utils.view.FarsiTextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/brief" android:background="@drawable/label_bg" android:paddingLeft="20dp" android:paddingTop="5dp" android:paddingRight="20dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/brief" android:layout_alignParentRight="true"/>
+            <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/gray" android:id="@+id/tv_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="بروزرسانی:۳ دقیقه قبل" android:layout_toLeftOf="@+id/brief" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/image" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/coins" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/total_score" android:layout_toLeftOf="@+id/image" android:layout_centerVertical="true"/>
+            <utils.view.TitleTextView android:textSize="32sp" android:textColor="#e3af18" android:id="@+id/tv_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_toLeftOf="@+id/tv" android:layout_centerVertical="true"/>
+            <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@string/score" android:layout_toLeftOf="@+id/tv_score" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100">
+        <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/blue_link" android:gravity="center" android:id="@+id/btn_ads_result" android:background="@color/white" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="1px" android:text="@string/lottery" android:layout_weight="50"/>
+        <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/blue_link" android:gravity="center" android:id="@+id/btn_score_report" android:background="@color/white" android:padding="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="1px" android:text="@string/score_report" android:layout_weight="50"/>
+    </LinearLayout>
+    <ImageView android:background="#efeff4" android:layout_width="match_parent" android:layout_height="1px"/>
+    <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/light_black" android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginRight="10dp" android:text="@string/view_ads_channel"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/recycler" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <utils.view.TitleTextView android:textSize="12sp" android:textColor="@color/blue_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:text="سوالات متداول"/>
+        <utils.view.TitleTextView android:textSize="12sp" android:textColor="@color/blue_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/tutorial"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/rl_notification_list_row" android:background="@color/white" android:paddingBottom="@dimen/news_item_top_pad" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/main_left_padding" android:layout_marginRight="@dimen/main_right_padding">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/type1_h">
+            <ImageView android:id="@+id/iv_news_image" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:minHeight="@dimen/type1_h" android:transitionName="ivMain2"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/agency_text_color_day" android:layout_gravity="right" android:id="@+id/txt_time" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="4dp"/>
+    <RelativeLayout android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <utils.view.TitleTextView android:textSize="@dimen/text_size" android:textColor="@color/black" android:ellipsize="end" android:gravity="right" android:id="@+id/txt_title" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:layout_marginBottom="@dimen/news_item_title_margin" android:maxLines="2" android:lineSpacingMultiplier="0.8"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/rl1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_agency" android:visibility="visible" android:layout_width="@dimen/agency_logo_w" android:layout_height="@dimen/agency_logo_h" android:layout_margin="4dp" android:layout_alignParentRight="true"/>
+        <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/light_gray" android:gravity="right" android:id="@+id/txt_source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_agency" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

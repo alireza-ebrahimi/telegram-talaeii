@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/img_card_bank_icon" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/asanpardakht_ic_bank_empty" android:scaleType="centerInside"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.8">
+        <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="@dimen/asanpardakht_text_font_size" android:gravity="left" android:id="@+id/txt_card_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" style="@style/asanpardakht_InvertTextViewStyle"/>
+        <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="@dimen/asanpardakht_text_font_size" android:gravity="left" android:id="@+id/txt_card_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1" style="@style/asanpardakht_InvertTextViewStyle"/>
+    </LinearLayout>
+</LinearLayout>

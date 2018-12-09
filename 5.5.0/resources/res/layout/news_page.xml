@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/header_view" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/flexible_space_image_height" android:layout_marginTop="?attr/actionBarSize">
+        <ImageView android:id="@+id/iv_first_image" android:layout_width="match_parent" android:layout_height="@dimen/flexible_space_image_height" android:src="@color/white" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/playBtn" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_btn_play" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/grid" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_apps_black_48dp" android:layout_centerInParent="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                <utils.view.FarsiTextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/duration" android:background="@color/translucenter_dark2" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <View android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/empty_view_hight"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/v_news_metadata" android:background="@drawable/news_desc_header_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/videoCountContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_centerVertical="true">
+                    <utils.view.TitleTextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/ftv_video_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/iv_video" android:layout_width="@dimen/small_icon_size" android:layout_height="@dimen/small_icon_size" android:layout_marginLeft="5dp" android:src="@drawable/ic_videocam_white_48dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/picCountContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <utils.view.TitleTextView android:textSize="18sp" android:textColor="@color/white" android:id="@+id/ftv_pic_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/iv_image" android:layout_width="@dimen/small_icon_size" android:layout_height="@dimen/small_icon_size" android:layout_marginLeft="5dp" android:src="@drawable/ic_image_white_48dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <utils.view.CircularProgress android:id="@+id/pb_loading" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true" app:borderWidth="2dp"/>
+    </RelativeLayout>
+    <View android:id="@+id/overlay" android:layout_width="match_parent" android:layout_height="@dimen/flexible_space_image_height"/>
+    <com.github.ksoichiro.android.observablescrollview.ObservableScrollView android:id="@+id/scroll" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@+id/scrollContent" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@+id/top_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@android:color/transparent" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/flexible_space_image_height"/>
+                <View android:id="@android:id/title" android:background="@drawable/gradiant_actionbar_bg" android:layout_width="wrap_content" android:layout_height="?android:attr/actionBarSize"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_thumbnail_container" android:background="@color/dec_btn_back" android:visibility="gone" android:layout_width="match_parent" android:layout_height="60dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rel_context" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                    <View android:id="@+id/iv_political" android:background="@drawable/circle" android:visibility="gone" android:layout_width="5dp" android:layout_height="5dp" android:layout_marginTop="15dp" android:layout_marginRight="5dp" android:layout_alignParentRight="true"/>
+                    <utils.view.TitleTextView android:textSize="22sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="right" android:id="@+id/ftv_news_title" android:paddingLeft="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/iv_political" android:lineSpacingMultiplier="1"/>
+                </RelativeLayout>
+                <View android:id="@+id/devider" android:background="@color/light_black" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/default_padding" android:layout_marginTop="20dp" android:layout_marginRight="@dimen/default_padding"/>
+                <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/news_data_layout" android:paddingLeft="@dimen/default_padding" android:paddingTop="5dp" android:paddingRight="@dimen/default_padding" android:paddingBottom="5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/light_gray" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ftv_news_creation_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="4dp" android:layout_marginBottom="4dp"/>
+                    <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:background="@drawable/clock" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginTop="4dp" android:layout_marginRight="20dp" android:layout_marginBottom="4dp"/>
+                    <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/light_gray" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ftv_agency_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="4dp"/>
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_agency" android:layout_width="@dimen/agency_logo_w" android:layout_height="@dimen/agency_logo_h" android:layout_marginLeft="2dp" android:layout_marginTop="4dp" android:layout_marginRight="5dp" android:layout_marginBottom="4dp"/>
+                </LinearLayout>
+                <View android:id="@+id/divider2" android:background="@color/light_black" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/default_padding" android:layout_marginRight="@dimen/default_padding" android:layout_marginBottom="20dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/myLL" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_padding" android:layout_marginRight="@dimen/default_padding"/>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/ll_show_source" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/default_padding" android:layout_marginBottom="20dp">
+                    <utils.view.FarsiTextView android:textSize="@dimen/reportBtnTxtSize" android:textColor="@color/light_gray" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/ftv_news_url" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_site" android:maxLines="1" style="bold"/>
+                    <ImageView android:layout_gravity="center_vertical" android:background="@drawable/open_link" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="5dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_like" android:background="@drawable/border_tag_selected" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_margin="5dp" android:layout_alignParentRight="true">
+                        <ImageView android:id="@+id/iv_like" android:layout_width="25dp" android:layout_height="match_parent" android:layout_margin="2dp" android:src="@drawable/like_cmnt"/>
+                        <utils.view.TitleTextView android:textSize="16sp" android:textColor="@color/blue" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/ttv_like_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="0"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_dislike" android:background="@drawable/border_tag_selected" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_marginLeft="5dp" android:layout_marginTop="20dp" android:layout_marginRight="5dp" android:layout_marginBottom="5dp" android:layout_toLeftOf="@+id/ll_like">
+                        <utils.view.TitleTextView android:textSize="16sp" android:textColor="@color/red" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/ttv_dislike_counter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:layout_marginRight="5dp" android:text="0"/>
+                        <ImageView android:id="@+id/iv_dislike" android:layout_width="25dp" android:layout_height="match_parent" android:layout_margin="2dp" android:src="@drawable/dislike_cmnt"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <ProgressBar android:layout_gravity="center" android:id="@+id/pb_loading_news" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/ll_tag_container" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin">
+                    <utils.view.collectionpicker.HomeCollectionPicker android:id="@+id/collection_item_picker" android:paddingLeft="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" app:cp_itemTextColor="@color/white" app:cp_textPaddingLeft="0dp" app:cp_textPaddingRight="0dp" app:cp_textPaddingTop="0dp" app:cp_textPaddingBottom="0dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_buttons" android:background="@color/dec_btn_back" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/light_black" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" android:weightSum="3">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_more_info" android:background="@drawable/rounded_border10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:foreground="?attr/selectableItemBackground" android:layout_weight="1">
+                            <ImageView android:background="@drawable/info" android:layout_width="@dimen/tools_icon_size" android:layout_height="@dimen/tools_icon_size" android:layout_margin="10dp"/>
+                            <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/desc_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/info"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_share" android:background="@drawable/rounded_border10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:foreground="?attr/selectableItemBackground" android:layout_weight="1">
+                            <ImageView android:background="@drawable/share22" android:layout_width="@dimen/tools_icon_size" android:layout_height="@dimen/tools_icon_size" android:layout_margin="10dp"/>
+                            <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/desc_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/share_news"/>
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_fave" android:background="@drawable/rounded_border10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:foreground="?attr/selectableItemBackground" android:layout_weight="1">
+                            <ImageView android:id="@+id/iv_fave" android:background="@drawable/fave22" android:layout_width="@dimen/tools_icon_size" android:layout_height="@dimen/tools_icon_size" android:layout_margin="10dp"/>
+                            <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/desc_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:text="@string/add_to_fave"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@color/desc_color" android:id="@+id/tv_comment_count" android:paddingTop="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/last_comment"/>
+                    <View android:background="@color/light_black" android:layout_width="match_parent" android:layout_height="1dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_comments" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <utils.view.FarsiTextView android:textSize="@dimen/text_size" android:textColor="@color/titleTextColor" android:gravity="center" android:layout_gravity="center" android:id="@+id/ftv_no_comment" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/no_comment_added"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/show_more_comments" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <ImageView android:background="#435b66" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/back_arrow"/>
+                        <utils.view.FarsiTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/desc_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/show_all"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_btn_add_commnet" android:background="@color/dec_btn_back" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp">
+                    <View android:background="@color/light_black" android:layout_width="match_parent" android:layout_height="1dp"/>
+                    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/btn_add_comment" android:background="@drawable/rounded_border2" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp">
+                        <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@color/desc_color" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_comment_fast"/>
+                        <ImageView android:layout_gravity="center" android:background="@drawable/comment_fast" android:layout_width="25dp" android:layout_height="25dp" android:layout_margin="5dp"/>
+                    </LinearLayout>
+                    <View android:background="@color/light_black" android:layout_width="match_parent" android:layout_height="1dp"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/report_container" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_attetion" android:background="@color/white" android:paddingTop="20dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100">
+                        <LinearLayout android:layout_gravity="right|center_vertical|center_horizontal|center" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="100">
+                            <utils.view.FarsiTextView android:textSize="@dimen/reportBtnTxtSize" android:textColor="@color/desc_color" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/ftv_attentionText" android:paddingLeft="10dp" android:paddingTop="4dp" android:paddingRight="10dp" android:paddingBottom="4dp" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="100"/>
+                            <View android:background="@color/Gray" android:layout_width="match_parent" android:layout_height="2dp" android:layout_margin="5dp"/>
+                            <utils.view.FarsiTextView android:textSize="@dimen/reportBtnTxtSize" android:textColor="@color/light_gray" android:id="@+id/ftv_send_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_report"/>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="top" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_flag_n"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/dec_btn_back" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <utils.view.FarsiTextView android:textSize="16sp" android:textColor="@color/desc_color" android:paddingTop="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/related_news"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/ll_extra_content" android:background="@color/dec_btn_back" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/action_back" android:padding="10dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="5dp" android:src="@drawable/arrow_right" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/action_download" android:padding="3dp" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="1dp" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/btn_share" android:padding="3dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_fab_share" android:scaleType="centerCrop" android:layout_toRightOf="@+id/action_download" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/btn_info" android:padding="3dp" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:scaleType="centerCrop" android:layout_toRightOf="@+id/btn_share" android:layout_centerVertical="true"/>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1dp" android:layout_toLeftOf="@+id/action_back" android:layout_toRightOf="@+id/btn_share" android:layout_centerInParent="true" android:layout_centerVertical="true">
+                    <utils.view.FarsiTextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/ftv_ac_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_base" android:drawableRight="@drawable/ic_back_l" android:alpha="0.75"/>
+                    <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/actvity_title" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <utils.view.CircularProgress android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/pb_page_loading" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginBottom="10dp" app:borderWidth="2dp"/>
+        <LinearLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:orientation="vertical" android:id="@+id/ll_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/refresh1"/>
+            <utils.view.FarsiTextView android:textSize="@dimen/title_size" android:textColor="@color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/gray" android:id="@+id/downloadedSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="0MB"/>
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="/"/>
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/gray" android:id="@+id/totalSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0MB"/>
+                <utils.view.FarsiTextView android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/gray" android:id="@+id/percentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="0%"/>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/downloadProgressBar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxHeight="10dp" android:max="100" android:progress="1" android:indeterminate="false" android:minHeight="10dp" style="?android:attr/progressBarStyleHorizontal"/>
+        </LinearLayout>
+        <Button android:textSize="18sp" android:textStyle="bold" android:textColor="@color/edittextfocus" android:gravity="center" android:layout_gravity="center" android:id="@+id/cancelButton" android:background="#00ffffff" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="4dp" android:text="X" android:layout_weight="0.1"/>
+    </LinearLayout>
+</merge>

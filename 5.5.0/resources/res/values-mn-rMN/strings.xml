@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Нүүр хуудас руу шилжих</string>
+    <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
+    <string name="abc_action_bar_home_subtitle_description_format">%1$s, %2$s, %3$s</string>
+    <string name="abc_action_bar_up_description">Дээш шилжих</string>
+    <string name="abc_action_menu_overflow_description">Нэмэлт сонголтууд</string>
+    <string name="abc_action_mode_done">Дууссан</string>
+    <string name="abc_activity_chooser_view_see_all">Бүгдийг харах</string>
+    <string name="abc_activitychooserview_choose_application">Апп сонгох</string>
+    <string name="abc_capital_off">ИДЭВХГҮЙ</string>
+    <string name="abc_capital_on">ИДЭВХТЭЙ</string>
+    <string name="abc_search_hint">Хайх...</string>
+    <string name="abc_searchview_description_clear">Асуулгыг цэвэрлэх</string>
+    <string name="abc_searchview_description_query">Хайх асуулга</string>
+    <string name="abc_searchview_description_search">Хайх</string>
+    <string name="abc_searchview_description_submit">Асуулгыг илгээх</string>
+    <string name="abc_searchview_description_voice">Дуут хайлт</string>
+    <string name="abc_shareactionprovider_share_with">Хуваалцах</string>
+    <string name="abc_shareactionprovider_share_with_application">%s-тай хуваалцах</string>
+    <string name="abc_toolbar_collapse_description">Хумих</string>
+    <string name="mdtp_day_picker_description">Өдрүүдийг сараар</string>
+    <string name="mdtp_deleted_key">%1$s устсан</string>
+    <string name="mdtp_done_label">Дууссан</string>
+    <string name="mdtp_hour_picker_description">Цаг гүйлгэгч</string>
+    <string name="mdtp_item_is_selected">%1$s сонгогдсон</string>
+    <string name="mdtp_minute_picker_description">Минут гүйлгэгч</string>
+    <string name="mdtp_select_day">Сар болон өдрийг сонгоно уу</string>
+    <string name="mdtp_select_hours">Цаг сонгоно уу</string>
+    <string name="mdtp_select_minutes">Минут сонгоно уу</string>
+    <string name="mdtp_select_year">Жилийг сонгоно уу</string>
+    <string name="mdtp_year_picker_description">Жилийн жагсаалт</string>
+    <string name="search_menu_title">Хайлт</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

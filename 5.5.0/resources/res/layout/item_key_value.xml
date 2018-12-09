@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="2">
+    <utils.view.FarsiTextView android:textSize="@dimen/normal_text_medium" android:textColor="@color/black" android:gravity="right" android:id="@+id/tv_value" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="asshSHJ" android:layout_weight="1"/>
+    <utils.view.FarsiTextView android:textSize="@dimen/normal_text_medium" android:textColor="@color/black" android:gravity="right" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":"/>
+    <utils.view.FarsiTextView android:textSize="@dimen/normal_text_medium" android:textColor="@color/black" android:layout_gravity="left" android:id="@+id/tv_key" android:padding="5dp" android:paddingLeft="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="asshSHJ" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ll_root" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/linearLayout_focus" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0px" android:layout_height="0px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/tmp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <LinearLayout android:id="@+id/statisticHolder" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/et_term"/>
+            <RelativeLayout android:background="@drawable/border_cluster" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="5dp" android:layout_marginBottom="10dp" android:elevation="4dp">
+                <ImageView android:id="@+id/iv_voice_search" android:padding="3dp" android:layout_width="50dp" android:layout_height="50dp" android:layout_margin="5dp" android:src="@drawable/voice_search" android:layout_alignParentRight="true"/>
+                <org.telegram.customization.util.view.sva.JJSearchView android:id="@+id/jjsv" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignTop="@+id/et_term" android:layout_alignParentLeft="true" android:color="@color/red" app:size="5" app:scale="1.4"/>
+                <utils.view.FarsiEditText android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/et_term" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginBottom="5dp" android:hint="عبارت / کانال / موزیک" android:maxLines="1" android:layout_toLeftOf="@+id/iv_voice_search" android:layout_toRightOf="@+id/jjsv" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch"/>
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_voice_search1" android:padding="5dp" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="5dp" android:src="@drawable/voice_search" android:layout_toRightOf="@+id/jjsv" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp">
+                <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_advance_search" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="5dp" android:text="@string/advance_search" android:layout_alignParentLeft="true"/>
+                <utils.view.FarsiTextView android:textSize="8sp" android:textColor="@color/white" android:id="@+id/tv_selected_filters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <org.telegram.customization.speechrecognitionview.RecognitionProgressView android:layout_gravity="center" android:id="@+id/recognition_view" android:visibility="gone" android:layout_width="42dp" android:layout_height="42dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_advance_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tmp">
+        <utils.view.FarsiCheckBox android:id="@+id/cb_search_exact" android:layout_width="match_parent" android:layout_height="wrap_content" app:itemTextColor="@color/white" app:checkBoxEnable="true" app:itemTitle="جستجوی عین عبارت" app:itemTextSize="14sp"/>
+        <include android:id="@+id/select_category" android:visibility="gone" layout="@layout/item_search_filter"/>
+        <include android:id="@+id/select_filter_type" layout="@layout/item_search_filter"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="10dp">
+            <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/tv_simple_saerch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="جستجوی ساده" android:layout_alignParentLeft="true"/>
+            <ImageView android:id="@+id/iv_adv_search" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginLeft="2dp" android:src="@drawable/help_circle" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <utils.view.FarsiTextView android:textSize="10sp" android:textColor="@color/white" android:id="@+id/tv_search_help" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/advance_search_help" android:layout_toLeftOf="@+id/iv_adv_search" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <utils.view.FarsiButton android:theme="@style/ButtonGreen" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@+id/btn_search" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="@string/search"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ImageView android:id="@+id/bb_bottom_bar_shadow" android:layout_width="match_parent" android:layout_height="4dp" android:src="@drawable/bb_bottom_bar_top_shadow"/>
+    <FrameLayout android:id="@+id/bb_bottom_bar_outer_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:id="@+id/bb_bottom_bar_background_overlay" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/bb_bottom_bar_item_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</merge>

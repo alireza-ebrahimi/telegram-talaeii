@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:background="@color/dark_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:background="@drawable/confirm_box_color1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_close" android:background="?android:attr/selectableItemBackground" android:padding="5dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_close"/>
+                <utils.view.TitleTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/new_version" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_change_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+            <org.telegram.customization.util.DownloadProgressView android:orientation="horizontal" android:id="@+id/downloadProgressView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_btn_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="10dp">
+                <utils.view.FarsiTextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:id="@+id/download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download" android:layout_alignParentLeft="true"/>
+                <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@color/gray" android:id="@+id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/canceltext" android:layout_toRightOf="@+id/download" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

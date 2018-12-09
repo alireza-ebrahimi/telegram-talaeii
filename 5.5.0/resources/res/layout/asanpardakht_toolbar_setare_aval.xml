@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/asanpardakht_SDKTheme_setare_aval_accent_color" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:contentInsetStart="0dp" app:contentInsetEnd="0dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/img_shaparak" android:padding="5dp" android:layout_width="64dp" android:layout_height="match_parent" android:src="@drawable/asanpardakht_ic_shaparak" android:adjustViewBounds="true"/>
+        <TextView android:textSize="16sp" android:textColor="@color/asanpardakht_white" android:gravity="center_horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/asanpardakht_toolbar_title" android:layout_weight="1"/>
+        <ImageView android:padding="8dp" android:layout_width="64dp" android:layout_height="match_parent" android:src="@drawable/asanpardakht_ic_logo_with_name_without_shadow" android:adjustViewBounds="true"/>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

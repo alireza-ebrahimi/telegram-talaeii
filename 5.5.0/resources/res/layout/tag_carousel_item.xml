@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/root" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp">
+    <utils.view.FarsiTextView android:textSize="11sp" android:textColor="@color/gray" android:layout_gravity="center_vertical" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="alireza" android:maxLines="2"/>
+    <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/iv_user" android:background="@android:color/transparent" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_channel"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/border_cluster" android:layout_width="wrap_content" android:layout_height="150dp" android:layout_margin="3dp">
+    <ImageView android:id="@+id/theme_image" android:layout_width="match_parent" android:layout_height="100dp" android:src="@drawable/channelintro" android:layout_centerHorizontal="true"/>
+    <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/theme_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/iv_check" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/check_circle_gray" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme">
+    </style>
+    <style name="Platform.AppCompat">
+    </style>
+    <style name="Platform.AppCompat.Light">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/abc_text_size_button_material</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="HockeyApp.ButtonStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/hockeyapp_text_white</item>
+        <item name="android:gravity">left|center_horizontal|clip_horizontal</item>
+        <item name="android:background">@drawable/hockeyapp_btn_background</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="HockeyApp.EditTextStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:typeface">@null</item>
+        <item name="android:textColor">@color/hockeyapp_text_normal</item>
+        <item name="android:textColorHint">@color/hockeyapp_text_light</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>
+    <style name="HockeyApp.SingleLineInputStyle">
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="Platform.V14.AppCompat">
+        <item name="android:actionModeSelectAllDrawable">?attr/actionModeSelectAllDrawable</item>
+        <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
+    </style>
+    <style name="Platform.V14.AppCompat.Light">
+        <item name="android:actionModeSelectAllDrawable">?attr/actionModeSelectAllDrawable</item>
+        <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Notification">
+    </style>
+    <style name="TextAppearance.AppCompat.Notification.Title">
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent">
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent.Info">
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent.Line2">
+        <item name="android:textSize">@dimen/notification_subtext_size</item>
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent.Time">
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent.Title">
+    </style>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="right" android:orientation="vertical" android:background="@drawable/confirm_box_color1" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:layout_marginBottom="15dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_close" android:background="?android:attr/selectableItemBackground" android:padding="5dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_close"/>
+        <utils.view.TitleTextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/score_report" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_change_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/blue_link" android:id="@+id/tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="تعداد کلیک های جوین : " android:layout_alignParentRight="true"/>
+            <utils.view.FarsiTextView android:id="@+id/tv_join_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/tv1"/>
+        </RelativeLayout>
+        <ImageView android:background="@color/gray" android:layout_width="match_parent" android:layout_height="1px"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp">
+            <utils.view.FarsiTextView android:textSize="12sp" android:textColor="@color/blue_link" android:id="@+id/tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="تعداد کلیک های لینک : " android:layout_alignParentRight="true"/>
+            <utils.view.FarsiTextView android:id="@+id/tv_link_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/tv2"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

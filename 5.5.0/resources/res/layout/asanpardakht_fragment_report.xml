@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/asanpardakht_gradient_bg" android:layout_width="match_parent" android:layout_height="match_parent" app:elevation="5dp">
+    <include layout="@layout/asanpardakht_lyt_toolbar"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/lyt_report" android:background="@drawable/asanpardakht_report_content_bg" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+        <include layout="@layout/asanpardakht_lyt_report_status"/>
+        <ScrollView android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/asanpardakht_SDKTheme.FormStyle">
+                <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:gravity="center" android:id="@+id/txt_transaction_status_info" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/lyt_content" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:id="@+id/lyt_separator_line" android:background="@drawable/asanpardakht_faded_ling" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+                    <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:gravity="center_horizontal" android:id="@+id/txt_description" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginLeft="6dp" android:layout_marginRight="6dp">
+        <android.support.v7.widget.AppCompatImageButton android:theme="@style/asanpardakht_SDKTheme.ScreenshotButton" android:id="@+id/btn_screenshot" android:padding="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:scaleType="fitCenter" android:adjustViewBounds="true" android:tint="@color/asanpardakht_white" app:srcCompat="@drawable/asanpardakht_ic_photo_camera_black_48dp" style="@style/asanpardakht_SDKTheme.SecondaryButton"/>
+        <android.support.v7.widget.AppCompatButton android:theme="@style/asanpardakht_SDKTheme.TransactionButton" android:id="@+id/btn_return_parent" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/asanpardakht_action_param_return_parent" android:layout_weight="9" style="@style/asanpardakht_SDKTheme.SecondaryButton"/>
+    </LinearLayout>
+    <com.persianswitch.sdk.base.widgets.edittext.AutoResizeTextView android:textSize="12sp" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="4dp" android:text="@string/asanpardakht_report_footer_text"/>
+</LinearLayout>

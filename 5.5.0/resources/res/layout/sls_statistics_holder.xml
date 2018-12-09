@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <utils.view.TitleTextView android:textSize="13sp" android:textColor="@color/red" android:gravity="center" android:id="@+id/ttv_meta" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="جستجوی سراسری در تلگرام"/>
+    <utils.view.FarsiTextView android:textSize="11sp" android:textColor="@color/gray" android:gravity="center" android:id="@+id/ftv_title" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="7dp"/>
+</LinearLayout>

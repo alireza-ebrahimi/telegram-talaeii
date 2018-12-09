@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/confirm_box_color1" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <utils.view.TitleTextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/header" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sortBy" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="1px" android:src="@color/gray_light"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/filterRecyclerView" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:background="@color/gray" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:id="@+id/ll_sort_container" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <utils.view.FarsiTextView android:textSize="14sp" android:textColor="@color/blue" android:gravity="center" android:layout_gravity="left" android:id="@+id/done" android:background="?attr/selectableItemBackground" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/emal"/>
+</LinearLayout>
